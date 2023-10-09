@@ -1,0 +1,11 @@
+> uma maneira de usar o node sem ter que ficar gerando build toda hora
+> um servidor local que entende typescript
+****
+npm install ts-node-dev -D
+****
+> depois cria um novo script no package.json:
+****
+"start: dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+****
+
+

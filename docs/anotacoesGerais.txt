@@ -1,0 +1,72 @@
+> npm
+- Node Package Manager
+
+> npx *node package execute*
+- pra executar
+
+> tsc *typescript compiler*
+- vai traduzir o arquivo TS para um arquivo JS
+
+> npx tsc --init
+- criando o arquivo tsconfig.json na raiz do projeto
+
+> tsconfig.json
+- é um arquivo de configuração de como o typescript vai se comportar
+
+> rootDir
+- propriedade que indica qual a pasta raiz
+ex:. ./src
+
+> outDir
+- especifica a pasta de saída
+ex:. ./build
+
+> npx tsc
+- vai ler o tsconfig.json e obedecer as regras que foram/estão habilitadas
+
+> package.json
+- podemos facilitar a vida e ao invés de ter que digitar dois comandos, podemos criar um script novo dentro da pasta
+ex:. "start": "npx tsc && node build/index.js"
+
+> npm run
+- usado para executar scripts personalizados definidos no arquivo package.json
+ex:. npm run start
+
+***********
+
+> usar dois pontos ':' e definir o tipo da váriavel cria uma trava na váriavel
+ex:. let idade: number = 24;
+
+************
+
+> quando utilizar type ou interface?
+
+- type: quando se vai definir a forma como uma constante ou variável tem que receber seus valores na estrutura do objeto;
+- interface: quando se utiliza class (entende-se como um molde) e precisa deixar explicito que é um contrato.
+
+************
+
+> modificadores de acesso (data modifiers):
+
+-  é quem pode acessar um determinado dado da classe;
+- tipos de data modifiers: public, private, protected;
+- utilizando o private, significa que só será possível acessar a propriedade dentro da classe;
+- o public libera o acesso;
+- já o protected só pode ser enxergado dentro da classe ou de subclasses que herdem essa classe.
+
+*************
+
+> generics:
+
+- os três pontinhos '...' é o operador de spread, usa-se para espalhar os itens dentro do função e transformar tudo em um unico array;
+- <T> é uma notação generica que quando indicado na função pode representar qualquer tipo, não retorna mais só any e sim retorna o que eu mandar pra ele (string, number, boolean...);
+- generics <T> serve pra deixar em aberto o tipo que eu vou definir só depois, o passando como tipo do parâmetro.
+
+***********
+
+> ts node dev:
+- com o ts node dev você cria um servidor local que vai transpilar na memória sem ficar criando build sempre
+-> npm install ts-node-dev -D
+
+************
+
